@@ -62,6 +62,11 @@ export const menuItems: IMenuItem[] = [
         name: '表单'
     },
     {
+        index: '/modalForm',
+        icon: 'Comment',
+        name: '弹出框表单'
+    },
+    {
         index: '/table',
         icon: 'Grid',
         name: '表格'

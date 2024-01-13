@@ -2,15 +2,20 @@
   "name": "my-element-plus",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:components": "node ./command/build.js",
+    "lib": "npm run build:components"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
+    "@fullcalendar/core": "^6.1.10",
+    "@fullcalendar/daygrid": "^6.1.10",
+    "@fullcalendar/interaction": "^6.1.10",
     "@types/lodash": "^4.14.202",
+    "axios": "^1.6.5",
     "element-plus": "^2.4.3",
     "lodash": "^4.17.21",
     "vue": "^3.3.8",
@@ -20,6 +25,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.0",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "fs-extra": "^11.2.0",
     "less": "^4.2.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.0",

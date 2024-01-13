@@ -6,6 +6,8 @@ import 'element-plus/dist/index.css';
 import * as ElementPlusIcons from '@element-plus/icons-vue';
 import { elIconToLine } from './utils/index';
 import mUI from './components/index';
+// import mUI from '../lib/nianba-element-components.mjs';
+// import '../lib/style.css';
 
 const app = createApp(App);
 // 全局注册所有 element 图标，el-icon-xxx-yy 使用
